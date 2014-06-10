@@ -16,3 +16,33 @@
 //= require turbolinks
 //= require twitter/bootstrap/bootstrap-collapse
 //= require_tree .
+
+function show_robotics_tab () {
+	$('#robotics_tab').slideDown(500);
+	hide_software_tab();
+	hide_solutions_tab();
+}
+
+function show_software_tab () {
+	$('#software_tab').slideDown(500);
+	hide_robotics_tab();
+	hide_solutions_tab();
+}
+
+function show_solutions_tab () {
+	$('#solutions_tab').slideDown(500);
+	hide_software_tab();
+	hide_robotics_tab();
+}
+
+function hide_robotics_tab () {
+	$('#robotics_tab').slideUp(500);
+}
+
+function hide_software_tab () {
+	$('#software_tab').slideUp(500);
+}
+
+function hide_solutions_tab () {
+	$('#solutions_tab').slideUp(500);
+}
