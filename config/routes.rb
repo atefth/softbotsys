@@ -9,6 +9,12 @@ Rails.application.routes.draw do
 
   get 'home/team'
 
+  get 'home/splash'
+
+  get 'home/subscribe'
+
+  resources :subscribers
+
   root 'home#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
