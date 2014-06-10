@@ -1,7 +1,10 @@
-<div class="subscribers span8">
-	<% @subscribers.each do |subscriber| %>
-	    <div class="span5 offset3">
-	    	<%= subscriber.email %>
-	    </div>
-	<% end %>
+<div class="span9 offset2 hero-unit">
+	<div class="offset1">
+		<h1>Subscribers List</h1>
+		<% @subscribers.each do |subscriber| %>
+		    <div class="subscribers span4 offset1">
+		    	<%== subscriber.email %>
+		    </div>
+		<% end %>
+	</div>
 </div>

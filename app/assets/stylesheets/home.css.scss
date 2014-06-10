@@ -109,6 +109,16 @@ $subscribe-left-margin: 50px;
   margin-left: $subscribe-left-margin;
 }
 
+$subscribers-font-size: 18px;
+$subscribers-padding: 5px;
+
+.subscribers {
+  color: $primary-light;
+  font-weight: bold;
+  font-size: $subscribers-font-size;
+  padding: $subscribers-padding;
+}
+
 body {
   font-family: $font;
   color: $white;

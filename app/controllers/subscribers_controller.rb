@@ -8,7 +8,7 @@ class SubscribersController < ApplicationController
 	end
 
 	def create
-		@subscriber = Subscriber.new(params[:subscriber_params])
+		@subscriber = Subscriber.new(subscriber_params)
   		@subscriber.save
   		redirect_to "/home/index"
 	end
@@ -20,5 +20,5 @@ class SubscribersController < ApplicationController
 	private
 	  def subscriber_params
 	    params.require(:subscriber).permit(:email)
-	  end
+	  end	
 end
