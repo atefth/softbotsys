@@ -1,0 +1,9 @@
+<div class="hero-unit">
+	<%= form_for :subscriber, url: subscribers_path do |f| %>
+	  <p>
+	    <%= f.text_field :email, :class => "input-medium search-query", :placeholder => "Email" %>
+	    <%= f.submit "Subscribe", :class => "subscribe-btn btn btn-primary" %>
+	    Receive updates from SoftBot Systems. We'll keep in touch.
+	  </p> 
+	<% end %>
+</div>

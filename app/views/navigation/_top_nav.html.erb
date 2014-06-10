@@ -1,0 +1,12 @@
+<div class="navbar navbar-inverse">
+	<div class="navbar-inner">
+		<a class="brand active" href="/home/splash">SoftBot™</a>
+		<ul class="nav">
+			<li <% if @page == 'home' %> <%==  'class="active"' %> <% end %> ><a href="/">Home</a></li>
+			<li <% if @page == 'about' %> <%== 'class="active"' %> <% end %> ><a href="/home/about">About</a></li>
+			<li <% if @page == 'projects' %> <%== 'class="active"' %> <% end %> ><a href="/home/projects">Projects</a></li>
+			<li <% if @page == 'team' %> <%== 'class="active"' %> <% end %> ><a href="/home/team">Team</a></li>
+			<li <% if @page == 'contact' %> <%== 'class="active"' %> <% end %> ><a href="/home/contact">Contact</a></li>
+		</ul>
+	</div>
+</div>
